@@ -1,18 +1,16 @@
-<script>
-  import "../app.css";
-</script>
-
-<nav>
-  <ul>
-    <li><a href="/">Home</a></li>
-  </ul>
-</nav>
-<div class="layout">
+<div class="wrapper">
   <slot />
 </div>
 
 <style>
-  .layout {
-    margin: 0 5vw;
+  .wrapper {
+    width: 50vw;
+    margin: 0 auto;
+  }
+  :global(.more-link) {
+    display: none;
+  }
+  :global(img) {
+    max-width: 100%;
   }
 </style>
