@@ -20,5 +20,5 @@
   <h2>{@html post.title.rendered}</h2>
   <img src="{post.image}" alt="{post.title.rendered}">
   <p>{@html post.excerpt.rendered}</p>
-  <a href={`/posts/${post.id}`}>Read More</a>
+  <a href={`/posts/${post.slug}`}>Read More</a>
 {/each}
